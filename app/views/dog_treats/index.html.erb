@@ -1,0 +1,30 @@
+<br />
+
+<div class="container">
+    <div class="content">
+        <%= simple_form_for @dog_treat do |f| %>
+        <%= f.input :name %>
+        <br />
+        <%= f.input :description %>
+        <br />
+        <%= f.input :rating %>
+        <br />
+        <%= f.submit 'Add', class: 'my-btn' %>
+    <% end %>
+    </div>
+    <br class="clear" />
+    <br />
+    <div class="content list">
+        <br />
+        <% @dog_treats.each do |dog_treat| %>
+            <h2><%= dog_treat.name %></h2>
+            <%= dog_treat.description %>
+            <br />
+            <br />
+            <%= dog_treat.rating %>
+            <br />
+            <br />
+            <hr>
+        <% end %>
+    </div>
+</div>

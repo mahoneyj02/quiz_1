@@ -1,0 +1,2 @@
+class DogTreat < ApplicationRecord
+end

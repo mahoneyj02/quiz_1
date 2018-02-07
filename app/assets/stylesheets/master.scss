@@ -1,14 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.content {
+    padding: 40px 80px;
+    background-color: #4d4d4d;
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+}
+
+.content form {
+    padding: 10%;
+}
+
+.content label {
+    float: left;
+    margin: 0 75% 5px 0;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.content .list {
+    background-color: #fefefe;
+}
+
+.content input, .content textarea {
+    border: none;
+    width: 100%;
+}
+
+.content textarea {
+    height: 200px;
+}
+
+.my-btn {
+    width: 30%;
+    background-color: #90ee90;
+    padding: 10px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    font-weight: bold;
+}
+    
 h1 {
     background-color: #a22cf1;
     color: #d44df5;
+}
+
+h2 {
+    color: #90ee90;
 }
 
 p {
     text-align: left;
 }
 
-.container {
-    width: 80%;
-    text-align: center;
-    
+.clear {
+    clear: both;
 }
